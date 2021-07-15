@@ -15,7 +15,15 @@ router.post("/add", async (req, res) => {
       description
   };
   await pool.query("INSERT INTO bloc set ?", [newbloc])
-  res.send("recibido");
+  res.redirect("/blocs");
+});
+
+router.get("/", async (req, res) => {
+
+  const blocs = await pool.query("SELECT * FROM bloc")
+  console.log(blocs)
+  res.render("blocs/list", {blocs})
+
 });
 
 module.exports = router;
