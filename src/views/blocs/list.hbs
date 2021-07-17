@@ -17,11 +17,22 @@
                         <p class="m-2">
                             {{timeago created_at}}
                         </p><br>
-                        <a href="" class="btn btn-danger">Borrar Bloc</a>
-                        <a href="" class="btn btn-secondary">Editar Bloc</a>
+                        <a href="/blocs/delete/{{id}}" class="btn btn-danger">Borrar Nota</a>
+                        <a href="/blocs/edit/{{id}}" class="btn btn-secondary">Editar Nota</a>
                    </div>
                </div>
           </div>
+        {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>
+                        No hay notas creados todavia
+                    </p><br>
+                    <a href="/blocs/add" class="btn btn-secondary">
+                        Crea uno
+                    </a>
+                </div>
+            </div>
         {{/each}}
 
     </div>

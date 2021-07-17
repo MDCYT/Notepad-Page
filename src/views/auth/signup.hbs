@@ -1,0 +1,41 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>
+            Registrate
+          </h3>
+        </div>
+        <div class="card-body">
+          <form action="/signup" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                name="names"
+                placeholder="Nombres"
+                class="form-control"
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+                <input type="text" name="first_surname" placeholder="Primer Apellido" class="col-md-2 form-control">
+                <input type="text" name="second_surname" placeholder="Segundo Apellido" class="col-md-2 form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Nombre de Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Contraseña" class="form-control">
+            </div><br>
+            <div class="form-group">
+                <button class="btn btn-success btn-block">
+                    Registrarse
+                </button>            
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
