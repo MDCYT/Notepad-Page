@@ -6,7 +6,7 @@ USE database_bloc;
 CREATE TABLE users(
     id INT(11) NOT NULL,
     username VARCHAR(16) NOT NULL,
-    password VARCHAR(32) NOT NULL,
+    password VARCHAR(2560) NOT NULL,
     names VARCHAR(32) NOT NULL,
     first_surname VARCHAR(20) NOT NULL,
     second_surname VARCHAR(20) NOT NULL
